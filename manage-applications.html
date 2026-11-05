@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Applications | PawHaven</title>
+  <meta name="description" content="PawHaven — a friendly pet adoption platform student project.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">🐾</span><span>PawHaven</span></a><nav class="nav-links"><a href="index.html">Home</a><a href="pets.html">Meet the Pets</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html">Login</a><a class="nav-cta" href="register.html">Join Us</a></nav></div></header>
+<main class="container">
+
+<section class="page-intro"><span class="eyebrow">Staff workspace</span><h1>Manage applications</h1><p>Review adoption requests, follow up with applicants, and update the request status. All records shown here are examples.</p></section>
+<div class="stats"><div class="stat"><strong>18</strong><span>Total applications</span></div><div class="stat"><strong>8</strong><span>Pending review</span></div><div class="stat"><strong>7</strong><span>Approved</span></div><div class="stat"><strong>3</strong><span>Closed</span></div></div>
+<section class="panel"><h2>Find an application</h2><form action="#" method="get"><div class="form-grid"><div><label for="search">Applicant or application ID</label><input id="search" name="search" placeholder="Search sample records"></div><div><label for="status">Status</label><select id="status" name="status"><option>All statuses</option><option>Pending</option><option>Approved</option><option>Rejected</option></select></div></div><button type="submit">Apply filters</button><p class="hint">Filtering is not active in this static demo.</p></form></section>
+<section class="panel"><h2>Application queue</h2><div class="table-wrap"><table><thead><tr><th>ID</th><th>Applicant</th><th>Pet</th><th>Submitted</th><th>Status</th><th>Review</th></tr></thead><tbody><tr><td>APP-001</td><td>Aarav Sharma</td><td>Bruno</td><td>12 Oct 2026</td><td><span class="status">Pending</span></td><td><a href="#review">Review</a></td></tr><tr><td>APP-002</td><td>Priya Singh</td><td>Luna</td><td>08 Oct 2026</td><td><span class="status approved">Approved</span></td><td><a href="#review">View</a></td></tr><tr><td>APP-003</td><td>Rohan Kumar</td><td>Coco</td><td>07 Oct 2026</td><td><span class="status rejected">Rejected</span></td><td><a href="#review">View</a></td></tr></tbody></table></div></section>
+<section class="panel" id="review"><h2>Review application</h2><form action="#" method="post"><div class="form-grid"><div><label for="appid">Application ID</label><input id="appid" name="appid" placeholder="e.g. APP-001"></div><div><label for="decision">Decision / status</label><select id="decision" name="decision"><option>Pending review</option><option>Approved</option><option>Needs more information</option><option>Rejected</option></select></div><div class="full"><label for="notes">Staff notes</label><textarea id="notes" name="notes" placeholder="Add review notes or next steps"></textarea></div></div><button type="submit">Save review</button><p class="hint">The review will not save until a backend is implemented.</p></form></section>
+
+</main>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">🐾</span><span style="color:white">PawHaven</span></a><p>A little love, a forever home, and a whole new best friend. Helping pets and people find each other.</p></div><div><h3>Explore</h3><div class="footer-links"><a href="pets.html">Meet the Pets</a><a href="adoption-form.html">Adoption Form</a><a href="my-applications.html">My Applications</a><a href="about.html">Our Story</a></div></div><div><h3>Get in touch</h3><div class="footer-links"><a href="mailto:hello@pawhaven.example">hello@pawhaven.example</a><a href="contact.html">Contact us</a><span>Punjab, India</span></div></div></div><div class="copyright">© 2026 PawHaven · A student project demo. Sample data only.</div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Pets | PawHaven</title>
+  <meta name="description" content="PawHaven — a friendly pet adoption platform student project.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">🐾</span><span>PawHaven</span></a><nav class="nav-links"><a href="index.html">Home</a><a href="pets.html">Meet the Pets</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html">Login</a><a class="nav-cta" href="register.html">Join Us</a></nav></div></header>
+<main class="container">
+
+<section class="page-intro"><span class="eyebrow">Staff workspace</span><h1>Manage pets</h1><p>Keep pet profiles clear, helpful, and up to date. This page shows the planned interface with sample records.</p></section>
+<div class="stats"><div class="stat"><strong>24</strong><span>Total pets</span></div><div class="stat"><strong>16</strong><span>Available</span></div><div class="stat"><strong>5</strong><span>On hold</span></div><div class="stat"><strong>3</strong><span>Adopted</span></div></div>
+<section class="panel"><h2>Add a pet</h2><form action="#" method="post"><div class="form-grid"><div><label for="petname">Pet name</label><input id="petname" name="petname" required placeholder="e.g. Bruno"></div><div><label for="species">Species</label><select id="species" name="species"><option>Dog</option><option>Cat</option><option>Rabbit</option><option>Other</option></select></div><div><label for="age">Age</label><input id="age" name="age" placeholder="e.g. 2 years"></div><div><label for="gender">Gender</label><select id="gender" name="gender"><option>Male</option><option>Female</option><option>Unknown</option></select></div><div><label for="temperament">Personality</label><input id="temperament" name="temperament" placeholder="Playful, calm..."></div><div><label for="availability">Availability</label><select id="availability" name="availability"><option>Available</option><option>On hold</option><option>Adopted</option></select></div><div class="full"><label for="description">Description and care needs</label><textarea id="description" name="description" placeholder="Tell adopters about this pet"></textarea></div></div><button type="submit">Add pet</button><p class="hint">Add-pet form is visual only until connected to the backend.</p></form></section>
+<section class="panel"><h2>Pet records</h2><div class="table-wrap"><table><thead><tr><th>Name</th><th>Type</th><th>Age</th><th>Personality</th><th>Status</th><th>Action</th></tr></thead><tbody><tr><td>Bruno</td><td>Dog</td><td>2 years</td><td>Playful</td><td><span class="status approved">Available</span></td><td><a href="pet-details.html?pet=bruno">View</a></td></tr><tr><td>Luna</td><td>Cat</td><td>1 year</td><td>Gentle</td><td><span class="status approved">Available</span></td><td><a href="pet-details.html?pet=luna">View</a></td></tr><tr><td>Coco</td><td>Rabbit</td><td>8 months</td><td>Curious</td><td><span class="status">On hold</span></td><td><a href="pet-details.html?pet=coco">View</a></td></tr><tr><td>Rocky</td><td>Dog</td><td>3 years</td><td>Loyal</td><td><span class="status rejected">Adopted</span></td><td><a href="pet-details.html?pet=rocky">View</a></td></tr></tbody></table></div></section>
+
+</main>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">🐾</span><span style="color:white">PawHaven</span></a><p>A little love, a forever home, and a whole new best friend. Helping pets and people find each other.</p></div><div><h3>Explore</h3><div class="footer-links"><a href="pets.html">Meet the Pets</a><a href="adoption-form.html">Adoption Form</a><a href="my-applications.html">My Applications</a><a href="about.html">Our Story</a></div></div><div><h3>Get in touch</h3><div class="footer-links"><a href="mailto:hello@pawhaven.example">hello@pawhaven.example</a><a href="contact.html">Contact us</a><span>Punjab, India</span></div></div></div><div class="copyright">© 2026 PawHaven · A student project demo. Sample data only.</div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
